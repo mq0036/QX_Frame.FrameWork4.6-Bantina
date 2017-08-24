@@ -1,5 +1,5 @@
-﻿using QX_Frame.Helper_DG;
-using QX_Frame.Helper_DG.Extends;
+﻿using QX_Frame.Bantina;
+using QX_Frame.Bantina.Extends;
 using System;
 using System.Net;
 using System.Net.Http;

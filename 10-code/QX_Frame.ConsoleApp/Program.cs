@@ -4,7 +4,7 @@ using QX_Frame.Data.Contract;
 using QX_Frame.Data.Entities;
 using QX_Frame.Data.QueryObject;
 using QX_Frame.Data.Service;
-using QX_Frame.Helper_DG;
+using QX_Frame.Bantina;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,7 +17,7 @@ using QX_Frame.App.Base.Options;
 using System.Data.SqlClient;
 using System.Net.Mail;
 using System.Data.Entity;
-using QX_Frame.Helper_DG.Service;
+using QX_Frame.Bantina.Service;
 
 namespace QX_Frame.ConsoleApp
 {

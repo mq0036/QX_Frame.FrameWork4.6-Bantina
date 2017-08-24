@@ -57,9 +57,8 @@
     <Reference Include="QX_Frame.App.Web">
       <HintPath>..\QX_Frame.Reference\QX_Frame.App.Web\QX_Frame.App.Web.dll</HintPath>
     </Reference>
-    <Reference Include="QX_Frame.Helper_DG, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\QX_Frame.Reference\QX_Frame.Helper_DG\QX_Frame.Helper_DG.dll</HintPath>
+    <Reference Include="QX_Frame.Bantina">
+      <HintPath>..\QX_Frame.Reference\QX_Frame.Bantina\QX_Frame.Bantina.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />

@@ -1,5 +1,5 @@
 ﻿using QX_Frame.App.Base.Options;
-using QX_Frame.Helper_DG;
+using QX_Frame.Bantina;
 using System;
 using System.Data;
 using System.Data.SqlClient;

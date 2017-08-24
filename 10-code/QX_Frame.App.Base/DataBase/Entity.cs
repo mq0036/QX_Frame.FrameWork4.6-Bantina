@@ -1,4 +1,4 @@
-﻿using QX_Frame.Helper_DG.Bantina;
+﻿using QX_Frame.Bantina.Data;
 using System;
 using System.Linq.Expressions;
 using System.Reflection;
@@ -10,7 +10,7 @@ namespace QX_Frame.App.Base
      * sj:2017-3-1 15:06:24
      **/
     [Serializable]
-    public class Entity<DataBaseEntity, TEntity> : IEntity<DataBaseEntity, TEntity> where DataBaseEntity : Bantina
+    public class Entity<DataBaseEntity, TEntity> : IEntity<DataBaseEntity, TEntity> where DataBaseEntity : Bankinate
     {
         private static readonly object locker = new object();//locker object
         //New Entity Instance

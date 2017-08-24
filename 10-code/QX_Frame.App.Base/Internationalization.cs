@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
-using QX_Frame.Helper_DG;
-using QX_Frame.Helper_DG.Configs;
-using QX_Frame.Helper_DG.Extends;
+using QX_Frame.Bantina;
+using QX_Frame.Bantina.Configs;
+using QX_Frame.Bantina.Extends;
 /**
  * author:qixiao
   * * crete:2017-5-16 14:08:31
@@ -46,7 +46,7 @@ namespace QX_Frame.App.Base
         {
             if (string.IsNullOrEmpty(QX_Frame_Helper_DG_Config.International_ConfigFileLocation))
             {
-                throw new Helper_DG.Extends.Exception_DG("QX_Frame_Config.International_ConfigFileLocation must be provide correctly ! -- QX_Frame.Helper_DG.Extends.Exception_DG line:18");
+                throw new Exception_DG("QX_Frame_Config.International_ConfigFileLocation must be provide correctly ! -- QX_Frame.Bantina.Extends.Exception_DG line:18");
             }
             return IO_Helper_DG.Json_GetJObjectFromJsonFile(QX_Frame_Helper_DG_Config.International_ConfigFileLocation);//get json configuration file
         }

@@ -1,5 +1,6 @@
 using QX_Frame.App.Base;
-using QX_Frame.Helper_DG.Bantina;
+using QX_Frame.Bantina.Data;
+
 namespace QX_Frame.Data.Entities
 {
 

@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
-using QX_Frame.Helper_DG;
-using QX_Frame.Helper_DG.Configs;
-using QX_Frame.Helper_DG.Extends;
+using QX_Frame.Bantina;
+using QX_Frame.Bantina.Configs;
+using QX_Frame.Bantina.Extends;
 using System.Web.Http;
 
 namespace QX_Frame.App.WebApi
@@ -17,7 +17,7 @@ namespace QX_Frame.App.WebApi
         {
             if (string.IsNullOrEmpty(QX_Frame_Helper_DG_Config.International_ConfigFileLocation))
             {
-                throw new Exception_DG("QX_Frame_Helper_DG_Config.International_ConfigFileLocation must be provide correctly ! -- QX_Frame.Helper_DG.Extends.Exception_DG line:18");
+                throw new Exception_DG("QX_Frame_Helper_DG_Config.International_ConfigFileLocation must be provide correctly ! -- QX_Frame.Bantina.Extends.Exception_DG line:18");
             }
             JObject jobject = IO_Helper_DG.Json_GetJObjectFromJsonFile(QX_Frame_Helper_DG_Config.International_ConfigFileLocation);//get json configuration file
             return jobject[QX_Frame_Helper_DG_Config.International_Language][$"LB_{LB_Code}"].ToString();
@@ -32,7 +32,7 @@ namespace QX_Frame.App.WebApi
         {
             if (string.IsNullOrEmpty(QX_Frame_Helper_DG_Config.International_ConfigFileLocation))
             {
-                throw new Exception_DG("QX_Frame_Helper_DG_Config.International_ConfigFileLocation must be provide correctly ! -- QX_Frame.Helper_DG.Extends.Exception_DG line:18");
+                throw new Exception_DG("QX_Frame_Helper_DG_Config.International_ConfigFileLocation must be provide correctly ! -- QX_Frame.Bantina.Extends.Exception_DG line:18");
             }
             JObject jobject = IO_Helper_DG.Json_GetJObjectFromJsonFile(QX_Frame_Helper_DG_Config.International_ConfigFileLocation);//get json configuration file
             return jobject[QX_Frame_Helper_DG_Config.International_Language][$"MSG_{MSG_Code}"].ToString();
@@ -47,7 +47,7 @@ namespace QX_Frame.App.WebApi
         {
             if (string.IsNullOrEmpty(QX_Frame_Helper_DG_Config.International_ConfigFileLocation))
             {
-                throw new Exception_DG("QX_Frame_Helper_DG_Config.International_ConfigFileLocation must be provide correctly ! -- QX_Frame.Helper_DG.Extends.Exception_DG line:18");
+                throw new Exception_DG("QX_Frame_Helper_DG_Config.International_ConfigFileLocation must be provide correctly ! -- QX_Frame.Bantina.Extends.Exception_DG line:18");
             }
             JObject jobject = IO_Helper_DG.Json_GetJObjectFromJsonFile(QX_Frame_Helper_DG_Config.International_ConfigFileLocation);//get json configuration file
             return jobject[QX_Frame_Helper_DG_Config.International_Language][$"ERROR_{ERROR_Code}"].ToString();

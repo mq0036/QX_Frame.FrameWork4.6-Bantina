@@ -2,7 +2,7 @@
 using QX_Frame.Data.Entities;
 using QX_Frame.Data.QueryObject;
 using QX_Frame.Data.Service;
-using QX_Frame.Helper_DG.Extends;
+using QX_Frame.Bantina.Extends;
 using System;
 using System.Collections.Generic;
 using System.Linq;

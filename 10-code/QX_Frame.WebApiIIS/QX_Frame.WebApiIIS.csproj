@@ -65,8 +65,9 @@
     <Reference Include="QX_Frame.App.Base">
       <HintPath>..\QX_Frame.Reference\QX_Frame.App.WebApi\QX_Frame.App.Base.dll</HintPath>
     </Reference>
-    <Reference Include="QX_Frame.Helper_DG">
-      <HintPath>..\QX_Frame.Reference\QX_Frame.Helper_DG\QX_Frame.Helper_DG.dll</HintPath>
+    <Reference Include="QX_Frame.Bantina, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\QX_Frame.Reference\QX_Frame.Bantina\QX_Frame.Bantina.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">

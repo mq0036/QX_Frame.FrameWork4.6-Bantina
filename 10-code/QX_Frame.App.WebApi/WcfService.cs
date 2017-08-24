@@ -1,13 +1,13 @@
-﻿using System;
-using Autofac;
-using System.Diagnostics.CodeAnalysis;
-using System.Data.Entity;
-using System.Reflection;
-using QX_Frame.Helper_DG;
-using System.Linq.Expressions;
+﻿using Autofac;
 using QX_Frame.App.Base;
-using QX_Frame.Helper_DG.Bantina;
+using QX_Frame.Bantina;
+using QX_Frame.Bantina.Data;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq.Expressions;
+using System.Reflection;
 
 namespace QX_Frame.App.WebApi
 {
@@ -54,7 +54,7 @@ namespace QX_Frame.App.WebApi
 
         private static int _totalCount { get; set; } = 0;//the query result count
 
-        private static int GetCount<DBEntity, TBEntity>(WcfQueryObject<DBEntity, TBEntity> query) where DBEntity : Bantina where TBEntity : class
+        private static int GetCount<DBEntity, TBEntity>(WcfQueryObject<DBEntity, TBEntity> query) where DBEntity : Bankinate where TBEntity : class
         {
             using (var db = Activator.CreateInstance<DBEntity>())
             {
@@ -62,7 +62,7 @@ namespace QX_Frame.App.WebApi
             }
         }
 
-        private static object GetEntities<DBEntity, TBEntity>(WcfQueryObject<DBEntity, TBEntity> query) where DBEntity : Bantina where TBEntity : class
+        private static object GetEntities<DBEntity, TBEntity>(WcfQueryObject<DBEntity, TBEntity> query) where DBEntity : Bankinate where TBEntity : class
         {
             List<TBEntity> source = null;
             using (var db = Activator.CreateInstance<DBEntity>())
@@ -73,7 +73,7 @@ namespace QX_Frame.App.WebApi
             return source;
         }
 
-        private static object GetEntitiesPaging<DBEntity, TBEntity, TKey>(WcfQueryObject<DBEntity, TBEntity> query, Expression<Func<TBEntity, TKey>> orderBy) where DBEntity : Bantina where TBEntity : class
+        private static object GetEntitiesPaging<DBEntity, TBEntity, TKey>(WcfQueryObject<DBEntity, TBEntity> query, Expression<Func<TBEntity, TKey>> orderBy) where DBEntity : Bankinate where TBEntity : class
         {
             List<TBEntity> source = null;
             int count = 0;
@@ -94,7 +94,7 @@ namespace QX_Frame.App.WebApi
         }
 
         [SuppressMessage("Microsoft.Performance", "CA1804:RemoveUnusedLocals", MessageId = "type")]
-        private static object GetEntity<DBEntity, TBEntity>(WcfQueryObject<DBEntity, TBEntity> query) where DBEntity : Bantina where TBEntity : class
+        private static object GetEntity<DBEntity, TBEntity>(WcfQueryObject<DBEntity, TBEntity> query) where DBEntity : Bankinate where TBEntity : class
         {
             using (var db = Activator.CreateInstance<DBEntity>())
             {

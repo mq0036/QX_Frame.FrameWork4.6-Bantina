@@ -1,9 +1,9 @@
-﻿using QX_Frame.Helper_DG.Bantina;
+﻿using QX_Frame.Bantina.Data;
 using System;
 
 namespace QX_Frame.App.Base
 {
-    public interface IEntity<DataBaseEntity, TEntity> where DataBaseEntity : Bantina
+    public interface IEntity<DataBaseEntity, TEntity> where DataBaseEntity : IBankinate
     {
         Boolean Add<TEntity2>(TEntity2 entity) where TEntity2 : class;
         Boolean Update<TEntity2>(TEntity2 entity) where TEntity2 : class;
