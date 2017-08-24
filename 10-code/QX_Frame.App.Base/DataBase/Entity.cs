@@ -1,4 +1,4 @@
-﻿using QX_Frame.Bantina.Data;
+﻿using QX_Frame.Bantina.Bankinate;
 using System;
 using System.Linq.Expressions;
 using System.Reflection;

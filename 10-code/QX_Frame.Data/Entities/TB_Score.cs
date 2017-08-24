@@ -11,7 +11,7 @@
  *********************************************************/
 
 using QX_Frame.App.Base;
-using QX_Frame.Bantina.Data;
+using QX_Frame.Bantina.Bankinate;
 using System;
 
 namespace QX_Frame.Data.Entities

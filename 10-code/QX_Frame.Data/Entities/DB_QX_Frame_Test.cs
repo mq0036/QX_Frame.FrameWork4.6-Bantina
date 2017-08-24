@@ -1,6 +1,6 @@
 namespace QX_Frame.Data.Entities
 {
-    using QX_Frame.Bantina.Data;
+    using QX_Frame.Bantina.Bankinate;
 
     public partial class DB_QX_Frame_Test : Bankinate
     {

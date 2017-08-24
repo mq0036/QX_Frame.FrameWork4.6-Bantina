@@ -52,7 +52,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web.Mvc">
-      <HintPath>..\QX_Frame.Reference\QX_Frame.App.WebApi\System.Web.Mvc.dll</HintPath>
+      <HintPath>..\QX_Frame.Reference\QX_Frame.App.Web\System.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />

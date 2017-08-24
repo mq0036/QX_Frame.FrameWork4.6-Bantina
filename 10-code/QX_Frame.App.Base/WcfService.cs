@@ -1,6 +1,6 @@
 ﻿using Autofac;
 using QX_Frame.Bantina;
-using QX_Frame.Bantina.Data;
+using QX_Frame.Bantina.Bankinate;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
