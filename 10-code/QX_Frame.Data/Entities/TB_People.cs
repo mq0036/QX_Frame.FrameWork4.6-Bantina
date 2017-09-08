@@ -39,10 +39,9 @@ namespace QX_Frame.Data.Entities
         public Int32 Age { get; set; }
         // 
         [Column]
-        [ForeignKey]
         public Int32 ClassId { get; set; }
 
-        [ForeignTable]
+        [ForeignTable(ForeignKeyFieldName = "ClassId")]
         public TB_ClassName tb_ClassName { get; set; }
     }
 }

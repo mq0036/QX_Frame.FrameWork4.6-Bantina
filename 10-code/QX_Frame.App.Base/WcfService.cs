@@ -1,4 +1,17 @@
-﻿using Autofac;
+﻿/*********************************************************
+ * CopyRight: QIXIAO CODE BUILDER. 
+ * Version:4.2.0
+ * Author:qixiao(柒小)
+ * Create:2017-1-13 14:09:05
+ * Update:2017-09-08 11:45:49
+ * E-mail: dong@qixiao.me | wd8622088@foxmail.com 
+ * GitHub: https://github.com/dong666 
+ * Personal web site: http://qixiao.me 
+ * Technical WebSit: http://www.cnblogs.com/qixiaoyizhan/ 
+ * Description:
+ * Thx , Best Regards ~
+ *********************************************************/
+using Autofac;
 using QX_Frame.Bantina;
 using QX_Frame.Bantina.Bankinate;
 using System;
@@ -9,11 +22,6 @@ using System.Reflection;
 
 namespace QX_Frame.App.Base
 {
-    /**
-     * author:qixiao
-     * time:2017-1-13 14:09:05
-     * update:2017-3-2 23:31:47
-     * */
     public abstract class WcfService : Dependency, IWcfService
     {
         static WcfService(){}
@@ -71,7 +79,7 @@ namespace QX_Frame.App.Base
             return source;
         }
 
-        private static object GetEntitiesPaging<DBEntity, TBEntity, TKey>(WcfQueryObject<DBEntity, TBEntity> query, Expression<Func<TBEntity, TKey>> orderBy) where DBEntity : Bankinate where TBEntity : class
+        private static object GetEntitiesPaging<DBEntity, TBEntity>(WcfQueryObject<DBEntity, TBEntity> query, Expression<Func<TBEntity, object>> orderBy) where DBEntity : Bankinate where TBEntity : class
         {
             List<TBEntity> source = null;
             int count = 0;
