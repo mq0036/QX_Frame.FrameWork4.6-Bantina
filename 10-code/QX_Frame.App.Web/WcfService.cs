@@ -167,7 +167,7 @@ namespace QX_Frame.App.Web
             object[] parameters = new object[] { query };
             return new WcfQueryResult(_getEntities.MakeGenericMethod(typeArguments).Invoke(null, parameters)) { TotalCount = _totalCount };
         }
-        protected WcfQueryResult QueryAllPaging<TBEntity, TKey>(WcfQueryObject query, Expression<Func<TBEntity, TKey>> orderBy) where TBEntity : class
+        protected WcfQueryResult QueryAllPaging<TBEntity>(WcfQueryObject query, Expression<Func<TBEntity, object>> orderBy) where TBEntity : class
         {
             if (query == null)
             {
@@ -177,7 +177,7 @@ namespace QX_Frame.App.Web
             {
                 throw new ArgumentNullException("if you want to paging must use OrderBy arguments  -- QX_Frame");
             }
-            System.Type[] typeArguments = new System.Type[] { query.db_type, query.tb_type, typeof(TKey) };
+            System.Type[] typeArguments = new System.Type[] { query.db_type, query.tb_type};
             object[] parameters = new object[] { query, orderBy };
             return new WcfQueryResult(_getEntitiesPaging.MakeGenericMethod(typeArguments).Invoke(null, parameters)) { TotalCount = _totalCount };
         }
