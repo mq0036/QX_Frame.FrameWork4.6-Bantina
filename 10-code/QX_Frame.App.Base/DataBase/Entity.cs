@@ -44,7 +44,7 @@ namespace QX_Frame.App.Base
             {
                 using (var db = Activator.CreateInstance<DataBaseEntity>())
                 {
-                    return db.Add(entity).Result;
+                    return db.Add(entity);
                 }
             }
         }
@@ -59,7 +59,7 @@ namespace QX_Frame.App.Base
             {
                 using (var db = Activator.CreateInstance<DataBaseEntity>())
                 {
-                    return db.Update(entity).Result;
+                    return db.Update(entity);
                 }
             }
         }
@@ -73,7 +73,7 @@ namespace QX_Frame.App.Base
             {
                 using (var db = Activator.CreateInstance<DataBaseEntity>())
                 {
-                    return db.Update(entity,where).Result;
+                    return db.Update(entity,where);
                 }
             }
         }
@@ -87,7 +87,7 @@ namespace QX_Frame.App.Base
             {
                 using (var db = Activator.CreateInstance<DataBaseEntity>())
                 {
-                    return db.Delete(entity).Result;
+                    return db.Delete(entity);
                 }
             }
         }
@@ -101,7 +101,7 @@ namespace QX_Frame.App.Base
             {
                 using (var db = Activator.CreateInstance<DataBaseEntity>())
                 {
-                    return db.Delete(where).Result;
+                    return db.Delete(where);
                 }
             }
         }
